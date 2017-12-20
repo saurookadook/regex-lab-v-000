@@ -1,4 +1,5 @@
 def starts_with_a_vowel?(word)
+  /word/ =~ /^[aeiou]/
   # string = word.to_s
   # string.start_with?(/^[aeiou]/)
 end
