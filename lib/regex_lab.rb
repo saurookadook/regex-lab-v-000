@@ -2,11 +2,7 @@ require 'pry'
 
 def starts_with_a_vowel?(word)
   # binding.pry
-  if word == word.start_with?(/^[aeiou]/)
-    return true
-  else
-    false
-  end
+  /^[aeiouAEIOU]/
   # string = word.to_s
   # string.start_with?(/^[aeiou]/)
 end
