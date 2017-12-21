@@ -19,5 +19,4 @@ end
 
 def valid_phone_number?(phone)
   !(phone =~ /^\p{Pi}+\d{10}+\p{Pf}$/).nil?
-  # !(phone =~ /\d\W/).nil?
 end
