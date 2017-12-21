@@ -2,7 +2,8 @@ require 'pry'
 
 def starts_with_a_vowel?(word)
   # binding.pry
-  !(word =~ /^[aeiou]/i).nil?
+  /^[aeiou]/i.match?(word)
+  # !(word =~ /^[aeiou]/i).nil?
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
@@ -18,6 +19,6 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  !(phone.grep(/\p{Pi}\d{10}\p{Pf}/)).nil?
+  !(phone =~ /\p{Pi}\d{10}\p{Pf}/).nil?
   # !(phone =~ /\d\W/).nil?
 end
