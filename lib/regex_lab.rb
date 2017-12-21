@@ -18,9 +18,10 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  if !(phone =~ /\w/).nil?
-    false
-  elsif !(phone =~ /\d{1,10}/).nil?
-    true
-  end
+  phone =~ /([0-9] *?){10}/
+  # if !(phone =~ /\w{1, }/).nil?
+  #   false
+  # elsif !(phone =~ /\d{1,10}/).nil?
+  #   true
+  # end
 end
