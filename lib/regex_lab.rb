@@ -22,4 +22,5 @@ def valid_phone_number?(phone)
     true
   elsif !(phone =~ /\W/).nil?
     false
+  end
 end
